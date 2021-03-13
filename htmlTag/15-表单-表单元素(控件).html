@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15-表单-表单元素(控件)</title>
+</head>
+<body>
+         <!-- 
+             1.单选按钮和复选按钮的 name 值要相同 
+             2.checked:标记哪个选项默认被选中,主要用在单选和复选按钮上
+             3. label的for值应该与对应标签id的值是一样的
+
+             以下三大表单控件:
+               1.都要有 name 属性
+        -->
+    <form>
+        <!-- 第一大类表单控件:input 表单-->
+        <h4>input的type值类型</h4>
+         type=text=>文本框:<br>
+         用户名:<input type="text" name="username" value="请输入用户名" maxlength="4"><br><br>
+
+         type=password=>密码框:<br>
+         密码:<input type="password" name="password"><br><br>
+         
+         type=radio=>单选框:<br>
+         性别: 男:<input type="radio" name="sex" value="男">  
+              女:<input type="radio" name="sex" value="女"><br><br>
+
+         label标签的使用:
+         <label for="weichegnnian">未成年</label>
+         <input type="radio" name="age" id="weichegnnian" value="未成年">
+         <label for="chegnnian">成年</label>
+         <input type="radio" name="age" id="chegnnian" value="成年"><br><br>
+
+         type=checkbox=>复选框:<br>
+         爱好: 敲代码:<input type="checkbox" name="hobby" value="code" checked>  打篮球:<input type="checkbox" name="hobby" value="basketball">
+               画画:<input type="checkbox" name="hobby" value="draw" checked> 
+         <br><br>
+
+         上传头像:<input type="file" name="avatar"><br><br>
+
+
+        <!-- 第二大类表单控件:下拉表单 select-->
+        <select name="province">
+            <option value="0">请选择省份</option>
+            <option value="湖北" selected>湖北省</option>
+            <option value="湖南">湖南省</option>
+            <option value="广东">广东省</option>
+        </select>
+        <br><br>
+
+        <!-- 第三类表单控件:文本域表单 textarea(特大号的input)-->
+        个人简介: 
+        <textarea name="intro" cols="50" rows="5">提醒:这里可以写个人简介</textarea>
+        <br><br>
+
+         <input type="button" value="我是普通按钮不是提交按钮,通常配合js使用,比如:点我发短信">
+         <!-- submit 的value默认值是提交 -->
+         <input type="submit" value="注册">
+         <input type="reset" value="重写填写">
+    </form>
+</body>
+</html>
