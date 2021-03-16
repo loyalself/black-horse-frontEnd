@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08-emmet语法快速生成html标签和样式</title>
+    <style>
+        body {
+            /* tac */
+            text-align: center;
+            /* w100 */
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    div>p>span
+    <div>
+        <p><span></span></p>
+    </div>
+
+    div+p
+    <div></div>
+    <p></p>
+
+    div.test
+    <div class="test"></div>
+
+    p.test1
+    <p class="test1"></p>
+
+
+    div.demo$*3
+    <div class="demo1"></div>
+    <div class="demo2"></div>
+    <div class="demo3"></div>
+
+    div{xxx}*2
+    <div>xxx</div>
+    <div>xxx</div>
+
+    div{$}*2
+    <div>1</div>
+    <div>2</div>
+
+</body>
+
+</html>
