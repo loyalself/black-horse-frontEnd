@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05-text-属性系列</title>
+    <style>
+        h1 {
+            /* 
+              * 本质是让 h1 盒子里的文字水平居中对齐,因为 h1 是独占一行的.
+              * center: 居中
+              * right: 右对齐
+              * left: 左对齐(默认)
+             */
+            text-align: center;
+            /* text-align: right; */
+
+            /**
+             *  underline: 下划线
+             *  line-through: 删除线
+             *  overline: 上划线
+             *  none: 删除下划线(多用于给 a 标签(它默认自带下划线)去除下划线)   
+             */
+            text-decoration: overline; 
+        }
+        /* text-indent: 文本首行缩进,多少距离.
+            这里有一个非常好用的缩进单位 em, 它是一个相对单位,就是当前元素(font-size)1个文字的大小,如果当前元素没有设置大小,则会按照
+            父元素的 1 个文字的大小来设置.
+         */
+        .firstp {
+            /* text-indent: 10px; */
+            text-indent: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>《望庐山瀑布》</h1>
+     <p class="firstp">日照香炉生紫烟，</p> 
+     <p>遥看瀑布挂前川。</p>
+     <p>飞流直下三千尺，</p>
+     <p>疑是银河落九天</p>
+</body>
+</html>

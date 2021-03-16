@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03-字体属性</title>
+    <style>
+        body {
+            font-size: 16px;
+        }
+        h2 {
+            font-family: '微软雅黑';
+            font-size: 18px;
+            /* 给标题取消加粗效果 */
+            font-weight: 400;
+        }
+        p {
+            font-family: 'Microsoft Yahei';
+        }
+        .bold {
+            /* font-weight: bold; */
+            font-weight: 700;
+        }
+        .xi {
+            font-weight: lighter;
+        }
+        .xie {
+            font-style: italic;
+        }
+    
+        .fuhe {
+            font: italic 700 30px 'Microsoft Yahei' 
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        font-family: 设置字体种类(chrome 默认的字体种类就是 微软雅黑 );
+        font-size: 设置字体大小,一定要有px(chrome 默认16px),标题(h标签)比较特殊它的字体大小需要单独设置 font-size;
+        font-weight: 设置字体粗细,默认值 normal, blod(加粗),lighter(细);开发中推荐使用数字来设置字体粗细(数字后面不要跟单位)
+                     700 等价于 bold ; 400 等价于 normal;
+        font-style: 设置文字的风格,默认值 normal,  italic 倾斜的 ;
+        
+        文字样式的复合写法:
+            font: font-style  font-weight font-size/line-height font-family
+            1. 顺序不能乱,
+            2. 不需要的属性可以忽略(即取默认值),但必须保留 font-size 和 font-family 属性,否则 font 属性将不起作用
+    -->
+    <h2>公元20210316</h2>
+    <p>今天是下雨天</p>
+    <p>今天超级困</p>
+    <p class="bold">今天喝可乐</p>
+    <p class="xi">试试字重里的细效果</p>
+    <p class="xie">今天的状态</p>
+    <p class="fuhe">少壮不努力,老大徒伤悲</p>
+</body>
+</html>
