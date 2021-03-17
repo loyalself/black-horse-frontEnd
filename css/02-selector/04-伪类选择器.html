@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04-伪类选择器</title>
+    <style>
+        /* 未访问的链接 */
+        a:link {
+            color: #333;
+            text-decoration: none;
+        }
+        /* 已访问过的链接 */
+        a:visited {
+            color: orange
+        }
+        /* 鼠标划过时 */
+        a:hover {
+            color: skyblue
+        }
+        /* 鼠标正在按下但还未松开鼠标时 */
+        a:active {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        最大的书写特点用 :(冒号) 
+        
+        注意事项:
+         1.为了确保伪类选择器能够生效,请按照以下顺序进行编写: link visited hover active 简称 LVHA;
+         2.因为链接有默认的样式,所以在日常开发中我们想要给链接设置样式需要单独设置.
+     -->
+
+     <a href="#">小猪佩奇</a>
+
+    <a href="http://xxx.com">未知网站</a>
+</body>
+</html>
