@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-块级元素</title>
+    <style>
+        div {
+            background-color: deeppink;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        块级元素特点:
+         1.独占一行;
+         2.高度、宽度、内边距、外边距都可以设置;
+         3.宽度默认是父级容器的的100%;
+         4.是一个容器(也即盒子),里面可以放行内或块级元素
+         注意:
+         p 、h 文字类型元素内不允许放块级元素，他们主要用于存放文字内容
+     -->
+    <div>我是div，我独占一行</div>
+    <p>我是一个p标签,段落标签<div>111</div></p>
+</body>
+</html>
