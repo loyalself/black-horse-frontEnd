@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-背景位置-方位名词</title>
+    <style>
+        div {
+            width: 400px;
+            height: 350px;
+            background-color: pink;
+            background-image: url(../test-images/iphone.png);
+            background-repeat: no-repeat;
+            /* 水平靠上居中 */
+            /* background-position: center top; */
+            
+            /* 靠右垂直居中 */
+            /* background-position: right center; */
+
+
+            /* background-position: right; */
+
+            background-position: bottom;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        利用 background-position 属性可以改变图片在背景中的位置;
+        语法: background-position: x y
+              x 和 y 代表的是坐标,可使用【方位名词】和【精确坐标】.
+        精确坐标: 百分数 | 由浮点数字和单位标识符组成的长度值
+        方位名词: top 、center、left、right、bottom
+           1. left top 和 top left 效果是一样的,与顺序无关
+           2. 如果只写了一个方位名词,则第二个方位名词默认为 center(居中对齐)
+    -->
+    <div></div>
+</body>
+</html>

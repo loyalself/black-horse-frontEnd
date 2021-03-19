@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06-单行文字垂直居中原理</title>
+    <style>
+        div {
+            width: 100px;
+            height: 60px;
+            line-height: 60px;
+            background-color: deeppink;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        让文字的行高等于盒子的高度,就可以实现文字垂直居中.
+           行高 = 文字上间距 + 文字的高度 + 文字下间距
+           而 文字上间距是等于文字下间距的,简单理解:行高的上间距和下间距把文字挤到中间了;
+           如果行高小于盒子的高度,文字会偏上;
+           如果行高大于盒子的高度,文字会偏下
+     -->
+     <div>文字垂直居中</div>
+</body>
+</html>

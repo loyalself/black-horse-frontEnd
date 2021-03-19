@@ -1,4 +1,9 @@
 # web start
+
+#### vscode 使用记录
+1. 打开html文件,安装 open in browser 扩展;
+
+
 #### 20210313
 一、
 1. html 为什么叫超文本标记语言:

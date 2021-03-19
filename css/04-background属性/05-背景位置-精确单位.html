@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05-背景位置-精确单位</title>
+    <style>
+        div {
+            width: 400px;
+            height: 250px;
+            background-color: pink;
+            background-image: url(../test-images/iphone.png);
+            background-repeat: no-repeat;
+            /* background-position: 20px 40px; */
+            background-position: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        1.有时我们可能不需要背景图片要么靠左、要么靠右、要么贴上、要么贴下、要么居中,可能要比如离左边几px(离右边...)这样的效果,
+          就要用到精确单位了.
+        2. 如果用到精确单位:
+            2.1 那么第一个必须是 x ,第二个必须是 y;
+            2.2 如果只写了一个值,那它一定是 x 方向的,那么第二个默认就是垂直居中了.
+    -->
+    <div></div>
+</body>
+</html>
