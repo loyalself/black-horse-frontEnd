@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-继承性</title>
+    <style>
+        div {
+            font-size: 30px;
+            color: deepskyblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        继承性:
+            子标签会继承父标签的样式.
+        1. 恰当使用继承可以简化代码,降低 css 样式的复杂性;
+        2. 子元素可以继承父元素的样式(text- , font-, line- 这些元素开头的可以继承,以及 color 属性)    
+
+    -->
+    <div>
+        <!-- 
+            没有给 p 设置样式,给 div 设置了样式, 那 p 就继承了 div 的样式
+         -->
+        <p>我是div的儿子</p>
+    </div>
+</body>
+</html>

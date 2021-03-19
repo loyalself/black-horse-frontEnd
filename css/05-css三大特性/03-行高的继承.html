@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03-行高的继承</title>
+    <style>
+        body {
+            color: pink;
+            /* font: 12px/24px 'Microsoft Yahei'; */
+            /* 
+             * 行高可以跟单位，也可以不跟单位
+               12px/1.5 的意思就是子元素的行高等于 1.5 * 12px = 18px
+               优势: 子元素可以根据自己文字的大小自动调整行高
+             */
+            font: 12px/1.5 'Microsoft Yahei';
+        }
+        div {
+            /* 
+             * 子元素继承了父元素 body 的行高 1.5 ; 这个 1.5 相当于当前元素字体大小的 1.5 倍,
+                所以当前 div 元素的行高就是 1.5 * 14px = 21px
+             */
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        需求: 将 div 和 p 的字体颜色都设置成粉红色
+     -->
+    <div>粉红色的回忆</div>
+    <p>粉红色的回忆</p>
+</body>
+</html>
