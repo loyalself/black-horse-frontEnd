@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+            border: 10px solid pink;
+            /* 这样的话盒子就变成了  220 * 220 了,要想变成 200 * 200,就得改变宽高 */
+            width: 180px;
+            height: 180px;
+        }
+    </style>
+</head>
+<body>
+     <!-- 我们需要一个 200 * 200 的盒子,但实际这个盒子有一个 10 *10 的边框,
+        那么这个盒子实际的大小就变成了 220 * 220 了 -->
+    <div></div>
+</body>
+</html>

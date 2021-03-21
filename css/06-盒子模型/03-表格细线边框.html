@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03-表格细线边框</title>
+    <style>
+        table {
+            width: 500px;
+            height: 300px;
+        }
+        th {
+            height: 35px;
+        }
+        table ,td,th {
+            text-align: center;
+            font-size: 18px;
+            border: 1px solid pink;
+            /* 当 td 挨在一起时,会出现边框叠加,之前都是1px挨在一起后 1+1 变成2 了,此时就有
+                些难看,于是出现了一个属性,取消边框叠加的属性: border-collapse
+             */
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table align="center" cellspacing="0">
+        <thead>
+            <tr>
+                <th>排名</th>
+                <th>小说名</th>
+                <th>热度</th>
+                <th>状态</th>
+                <th>作者</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>斗破苍穹</td>
+                <td>10000</td>
+                <td>完结</td>
+                <td>天蚕土豆</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>诛仙</td>
+                <td>9000</td>
+                <td>完结</td>
+                <td>萧鼎</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>武动乾坤</td>
+                <td>8000</td>
+                <td>完结</td>
+                <td>土豆</td>
+            </tr>
+
+           
+        </tbody>
+    </table>
+</body>
+</html>

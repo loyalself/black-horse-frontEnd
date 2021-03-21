@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07-padding实际也会影响盒子的大小</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 我们需要一个 200*200的盒子,但设置了20的上下左右边距时,盒子的大小就会变成
+        240 * 240 的,内边距会撑大盒子
+    -->
+    <div>
+        我是padding,我会撑大盒子
+    </div>
+</body>
+</html>

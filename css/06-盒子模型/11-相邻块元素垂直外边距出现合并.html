@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11-相邻块元素垂直外边距出现合并</title>
+    <style>
+        .laoda {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            margin-bottom: 100px;
+        }
+        .laoer {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        两个相邻块元素(兄弟),当上面设置了 margin-bottom ,下面设置了 margin-top,
+        则他们之间的垂直外边距不会出现两个之和,而是以设置最大的那个值为准,
+        这就叫外边距合并.
+
+        解决:只设置一个就可以了,要么只设置 margin-bottom,要么只设置 margin-top
+
+        注意:只有垂直方向才会出现这种情况
+     -->
+
+     <div class="laoda">老大</div>
+     <div class="laoer">老二</div>
+</body>
+</html>
