@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-float一般怎么用</title>
+    <style>
+        .father {
+            width: 1000px;
+            height: 600px;
+            background-color: pink;
+            margin: 100px auto;
+        }
+        .left {
+            width: 300px;
+            height: 300px;
+            background-color: green;
+            float: left;
+        }
+        .right {
+            width: 300px;
+            height: 300px;
+            background-color:skyblue;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        当给盒子设置浮动时,它会直接贴到浏览器的左端或右端,位置太偏了.
+        所以一般使用浮动时,是将一个正常的大盒子包含住要设置浮动的盒子。
+     -->
+    <div class="father">
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+</body>
+</html>
