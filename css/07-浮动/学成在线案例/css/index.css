@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    margin-top: 30px;
+    height: 42px;
+     background-color:pink;  
+}
+
+.logo {
+    float: left;
+    margin-right: 40px;
+}
+
+.nav {
+    float: left;
+    height: 42px;
+}
+
+.nav ul li {
+    float: left;
+    line-height: 42px;
+    padding: 0 10px ;
+    margin-left: 15px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #1b1212;
+}
+
+/*  nav ul li a:hover 若这样写,就是在文字下面出现下边框效果 */
+.nav ul li:hover {
+    border-bottom:1px solid blue;
+}
+
+.search {
+    float: left;
+    margin-left: 60px;
+}
+
+.search input {
+    float: left;
+    width: 300px;
+    height: 40px;
+    border: 1px solid rgb(118, 118, 228);
+    border-right: 0;
+    font-size: 14px;
+    padding-left: 10px;
+    color:#ccc
+}
+
+.search button {
+    float: left;
+    /* 这个宽度最好设置成与背景图片的宽度一样,避免图片变形 */
+    width: 50px;
+    height: 42px;
+    border: 0;
+    background-image: url(../images/btn.png);
+}
+
+.user-info {
+    float: right;
+    margin-right: 50px;
+    line-height: 42px;
+    height: 42px;
+}
+
+/* banner start */
+.banner {
+    height: 421px;
+    background-color: #1c036c;
+}
+
+.banner .w {
+    height: 421px;
+    /* background: url(../images/banner.png) no-repeat top center; */
+}
+
+.subnav {
+    background-color: red;
+}
+
+.course {
+    background-color: green;
+}
