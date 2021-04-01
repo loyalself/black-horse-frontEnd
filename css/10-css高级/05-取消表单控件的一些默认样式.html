@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05-取消表单控件的一些默认样式</title>
+    <style>
+        input, textarea {
+            /* 取消点击表单自带边款的效果 */
+            outline: none;
+        }
+        textarea {
+            /* textarea默认会让用户拖拽改变大小,设置 resize 为 none 可以解决 */
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="text">
+    <!-- textarea 最好放在一行写,不然文本框内输入内容不是从头开始的 -->
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+</body>
+</html>

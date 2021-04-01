@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        .box {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            margin: 100px auto;
+            background-color: pink;
+        }
+        .one, .two {
+            /* position: absolute; */
+            /* top: 50%; */
+            width: 50px;
+            height: 50px;
+            background-color: skyblue;
+        }
+        /* .one {
+            left: 0;
+        }
+        .two {
+            right: 0;
+        } */
+        .son {
+            position: absolute;
+            
+            width: 40px;
+            height: 40px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        绝对定位元素前面的元素,没有设置定位时,它是不会飘上去的,会贴在前面元素的下方;
+        一旦前面的元素设置了定位,它就会飘上去,根据书写顺序,覆盖上去.
+     -->
+    <div class="box">
+        <a href="#" class="one">one-a</a>
+        <a href="#" class="two">two-a</a>
+        <div class="son">son</div>
+    </div>
+</body>
+</html>

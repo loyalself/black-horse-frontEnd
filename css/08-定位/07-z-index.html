@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07-z-index</title>
+    <style>
+        .box {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+        }
+        .one {
+            background-color: pink;
+            z-index: 100;
+        }
+        .two {
+            left: 30px;
+            top: 30px;
+            background-color: green;
+            z-index: 60;
+        }
+        .three {
+            left: 60px;
+            top: 60px;
+            background-color: skyblue;
+            z-index: 30;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        在使用定位布局时,可能会出现盒子重叠的情况.此时,可以使用 z-index 来控制盒子的前后次序(z轴)
+        语法:  选择器 { z-index: 1;}
+        1. 数值可以是正整数、负整数或0, 默认值是 auto, 数值越大,盒子越靠上;
+        2. 如果属性值相同, 则按照书写顺序,后来居上;
+        3. 数字后面不能加单位;
+        4. 【只有定位的盒子才能使用 z-index 属性】
+     -->
+    <div class="box one">老大</div>
+    <div class="box two">老二</div>
+    <div class="box three">老三</div>
+</body>
+</html>

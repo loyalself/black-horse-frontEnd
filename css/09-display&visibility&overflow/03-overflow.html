@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03-overflow</title>
+    <style>
+        .box {
+            /* overflow: hidden; */
+            /* overflow: scroll; */
+            overflow: auto;
+            width: 200px;
+            height: 100px;
+            margin: 100px auto;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        1.overflow: 指定了如果内容溢出一个元素的框(超过其指定高度及宽度)时,会发生什么。
+         属性值:
+            visible(默认值): 不剪切内容也不添加滚动条;
+            hidden: 不显示超过对象尺寸的内容,超出的部分隐藏掉;
+            scroll: 不管内容超出没有,总是显示滚动条;
+            auto: 只当内容超出时才会显示滚动条,不超出不显示滚动条.
+        2. 一般情况下,我们都不想让溢出的内容显示出来,因为溢出的部分会影响布局;
+           但如果有定位的盒子,请谨慎使用 overflow:hidden 因为它会隐藏多余的部分.
+
+     -->
+    <div class="box">
+        层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）
+        <!-- 或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。
+        CSS不仅可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化 -->
+    </div>
+</body>
+</html>

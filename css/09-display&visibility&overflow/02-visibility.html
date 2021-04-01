@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-visibility</title>
+    <style>
+        .one {
+            visibility: hidden;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        .two {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        visibility: 用于指定一个元素可见还是隐藏
+        1. visibility: visible => 元素可视
+        2. visibility: hidden => 元素隐藏,继续占有原来的位置
+
+        如果隐藏元素想要原来的位置,就用 visibility: hidden
+        如果隐藏元素不想要原来的位置,就用 display: none(用处更多,重点)
+     -->
+    <div class="one">one</div>
+    <div class="two">two</div>
+</body>
+</html>

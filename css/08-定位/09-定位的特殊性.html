@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09-定位的特殊性</title>
+    <style>
+        span {
+            position: absolute;
+            top: 500px;
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+        }
+        div {
+            position:absolute;
+            width: 500px;
+            height: 100px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        绝对定位、固定定位 和 浮动有些类似:
+        1. 行内元素添加绝对或固定定位,可以直接设置宽高;
+        2. 块级元素添加绝对或固定定位,如果不给宽或高,默认大小是内容的大小;
+        3. 脱标的盒子(浮动、绝对定位、固定定位)都不会触发外边距合并的情况.
+     -->
+    <span>我是一个span,我即将要被设置定位属性,设置定位属性后,我就可以设置宽高了</span>
+    <div>我是div,我也即将要被设置定位属性,设置后,我的宽高默认由盒子内容撑开,不再独占一行了,但我依然可以设置宽高</div>
+</body>
+</html>

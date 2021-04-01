@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04-土豆影视案例</title>
+    <style>
+        /* .box {
+            position: relative;
+            margin: 100px auto;
+            width: 448px;
+            height: 252px;
+            background-color: skyblue;
+        }
+        .play {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -17px;
+            width: 34px;
+            height: 34px;
+        }
+        .mask {
+            position: absolute;
+            left:0;
+            top:0;
+            display: none;
+            width: 448px;
+            height: 252px;
+            background-color: rgba(0,0,0,.3);
+        }
+        .box:hover .mask {
+            display: block;
+        } */
+
+
+        .tudou {
+            position: relative;
+            width: 444px;
+            height: 320px;
+            background-color: pink;
+            margin: 30px auto;
+        }
+
+        .tudou img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .mask {
+            /* 隐藏遮罩层 */
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .4) url(arr.png) no-repeat center;
+        }
+
+        /* 当我们鼠标经过了 土豆这个盒子，就让里面遮罩层显示出来 */
+        .tudou:hover .mask {
+            /* 而是显示元素 */
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <div class="box">
+        <img src="tudou.jpg" alt="tudou" title="tudou" class="cover">
+        <img src="arr.png" alt="arr" title="arr" class="play">
+        <div class="mask"></div>
+    </div> -->
+
+    <div class="tudou">
+        <div class="mask"></div>
+        <img src="tudou.jpg" alt="tudou">
+    </div>
+</body>
+</html>

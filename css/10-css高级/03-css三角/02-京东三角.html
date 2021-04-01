@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-京东三角</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .jd {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 200px auto;
+            background-color: pink;
+        }
+        .sanjiao {
+            position: absolute;
+            right: 15px;
+            top: -30px;
+            width: 0;
+            height: 0;
+            /* 这两行代码是为了提高兼容性 */
+            font-size: 0;
+            line-height: 0;
+            border: 15px solid transparent;
+            border-bottom: 15px solid pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="jd">
+        <div class="sanjiao"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05-固定定位小技巧-固定到版心右侧</title>
+    <style>
+        .fixed {
+            position: fixed;
+            left: 50%;
+            margin-left: 500px;
+            width: 60px;
+            height: 150px;
+            background-color: pink;
+        }
+        .w {
+            width: 1000px;
+            height: 1000px;
+            background-color:skyblue;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+       固定定位小技巧: 固定到版心右侧
+       1. 让固定定位的盒子 left:50%.走到浏览器可视区(也可以看作版心)的一半位置.
+       2. 让固定定位的盒子 margin-left: 版心宽度的一半距离,多走版心宽度的一半位置.
+       就可以让固定定位的盒子贴着版心右侧对齐了.
+     -->
+    <div class="fixed">fixed</div>
+    <div class="w">版心</div>
+</body>
+</html>

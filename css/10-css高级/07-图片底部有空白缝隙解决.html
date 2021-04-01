@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07-图片底部有空白缝隙解决</title>
+    <style>
+        div {
+            border: 2px solid red;
+        }
+        img {
+            /* 解决方法一(推荐) */
+            /* vertical-align: bottom; */
+            /*  解决方法二 */
+            display: block; 
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        图片底部会有一个空白缝隙,原因是行内块元素和文字的基线对齐
+     -->
+    <div>
+        <img src="./images/ldh.jpg" alt="ldh">
+        <!-- this people is 刘德华 -->
+    </div>
+    
+</body>
+</html>

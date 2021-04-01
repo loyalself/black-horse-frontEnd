@@ -97,6 +97,10 @@ a {
     height: 42px;
 }
 
+.user-info img {
+    vertical-align: middle;
+}
+
 /* banner start */
 .banner {
     margin-top: 30px;
