@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-行内块元素巧妙运用</title>
+    <style>
+        .box {
+            text-align: center
+        }
+        .box a{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            color:#333;
+            text-decoration: none;
+            border: 1px solid black;
+        }
+        .box .prev, .box .next {
+            width: 90px;
+        }
+        .box .no-border, .box .a-ellipsis {
+            border:0
+        }
+        .box input {
+            width: 35px;
+            height: 30px;
+            outline: none;
+            border: 1px solid black;
+        }
+        .box button {
+            height: 34px;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <a href="#" class="prev">&lt;&lt;上一页</a>
+        <a href="#">1</a>
+        <a href="#" class="no-border">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#" class="a-ellipsis">...</a>
+        <a href="#" class="next">&gt;&gt;下一页</a>
+        共10页 到第
+        <input type="text">
+        页
+        <button>确定</button>
+    </div>
+</body>
+</html>

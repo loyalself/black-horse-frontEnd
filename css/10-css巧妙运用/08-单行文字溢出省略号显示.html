@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08-单行文字溢出省略号显示</title>
+    <style>
+        div {
+            margin: 100px auto;
+            width: 150px;
+            height: 80px;
+            /* 默认值 normal,意思是文字显示不开自动换行 */
+            /* white-space: normal; */
+            
+            /* 1. 文字显示不开强制一行显示 */
+            white-space: nowrap;
+            /* 2. 设置溢出隐藏属性  */
+            overflow: hidden;
+            /* 3. 文字溢出的部分用省略号显示 */
+            text-overflow: ellipsis;
+
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        单行文字溢出省略号显示必须的以上(123)3个步骤
+     -->
+    <div>
+        啥也不说,此处省略一万字
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-margin负值</title>
+    <style>
+        ul li {
+            position: relative;
+            float: left;
+            list-style: none;
+            width: 200px;
+            height: 300px;
+            margin-left: -1px;
+            border: 1px solid black;
+        }
+          /* 
+            1.问题: 这时你会发现鼠标划过每一个 li 时,重合边框的那条边没有边框,是因为被后面的 li 设置的边框压住了。
+            解决: 当鼠标划过 li 时 ,提高盒子即 li 的层级,则设置定位即可,经分析设置 相对定位即可。
+            2.这时问题又来了,假如盒子里(li)的其它元素需要设置【绝对定位】,那么父盒子就要设置相对定位,那么就会出现都有
+             相对定位的情况,这时就存在一个层级遮盖的问题了。
+             解决: 设置 z-index 属性
+           */
+        /* li:hover {
+           position: relative;
+           border: 1px solid orange;
+        } */
+
+        li:hover {
+            /* 提高鼠标划过当前盒子的层级大小 */
+            z-index: 1;
+            border: 1px solid orange;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        需求: 鼠标划过每一个 li 时,出现一个 1px 的边框
+    -->
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+</html>

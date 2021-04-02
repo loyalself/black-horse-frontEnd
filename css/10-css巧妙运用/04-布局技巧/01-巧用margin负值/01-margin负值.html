@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-margin负值</title>
+    <style>
+        ul li {
+            float: left;
+            list-style: none;
+            width: 200px;
+            height: 300px;
+            margin-left: -1px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        需求: 将每一个 li 都添加一个边框,但你会发现重叠部分的 li 边框变成双倍大小了,是因为重叠部分的边框累加了.
+        解决: 给每一个 li 都设置一个 margin-left: -1px,这样每一个 li 都会压住左边 li 的边框
+        因为结构样式的渲染是一个一个渲染的,第一个 li 设置 margin-left:-1px往左移动 1px,第二个 li 首先走 float 属性,
+        就会先贴着左边,这样就会出现边框大小累加的现象,这时再往下走样式,走到margin-left:-1px时,就会往左边再走 1px,将上一个
+        li的边框压住,这样就实现了每个 li 都是拥有 1px 边框大小的效果.
+     -->
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+</html>

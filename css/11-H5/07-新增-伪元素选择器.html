@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07-新增-伪元素选择器</title>
+    <style>
+        p {
+            width: 199px;
+            background-color: pink;
+        }
+        p::before {
+            /* display: block;
+            width: 100%;
+            height: 19px;
+            content: '';
+            background-color: skyblue; */
+           
+            content: '君不见黄河之水天上来,'; 
+            font-size: 14px;
+            color: green 
+        }
+        /* 单冒号写法是为了照顾低版本的浏览器 */
+        p:after {
+            content: '君不见高堂明镜悲白发，朝如青丝暮成雪。';
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        伪元素选择器可以帮我们利用 css 创建新的标签元素,而不需要 html 标签,从而简化 html 结构;
+        ::before  在元素内部的前面插入内容
+        ::after   在元素内部的后面插入内容
+
+        注意:
+        1. before 和 after 创建一个元素,但属于行内元素;
+        2. 新建的元素在文档树中是找不到的,所以我们称为 伪元素;
+        3. before 和 after 必须有 content 属性
+        4. 伪元素选择器和标签选择器的权重都是1
+     -->
+    <p>
+       奔流到海不复回。
+    </p>
+</body>
+</html>

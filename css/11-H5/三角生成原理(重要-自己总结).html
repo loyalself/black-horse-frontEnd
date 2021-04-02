@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三角生成原理(重要-自己总结)</title>
+    <style>
+        div {
+            border-top: 20px solid blue;
+            border-left: 50px solid green;
+            border-bottom: 80px solid red;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        当没有设置其它 border 属性时:
+            border-left 的实际高度: 盒子自身高度
+        
+        当设置了其它边框的 border 属性时:
+            1. 设置了 border-top 时, border-left的高度 = 盒子自身高度 + border-top 的值;
+            2. 又设置了 border-bottom 时, border-left的高度 = 盒子自身高度 + border-bottom 的值;
+
+        css 三角原理:
+            1. 当边框相交时,css会默认的再生成一个相交方向设置的边框数值的盒子;
+            2. 相交处是以斜线分割,所以这也是才能生成三角形的原理之一
+        这也能解释为什么,一个盒子 width 和 height 都为 0 时,只设置四个方向的 border,那么它们的高度都是累加的,而不是单单是
+        自己设置的 border 值了.
+    -->
+    <div></div>
+</body>
+</html>

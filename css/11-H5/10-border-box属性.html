@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-border-box属性</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 30px solid green;
+            background-color: pink;
+        }
+        p {
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            border: 30px solid purple;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div>我真实宽度是200*200,没有设置 box-sizing: border-box</div>
+    <p>
+        我真实宽度也是200*200,设置了 box-sizing: border-box
+    </p>
+</body>
+</html>
