@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11- transition 属性</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* transition: width 2s; */
+           
+            /* 同时修改多个属性,逗号分割 */
+            /* transition: width 2s,height 1s,background-color 5s; */
+            
+            /* 所有的都修改成一样的 */
+            transition: all 2s
+        }
+        div:hover {
+            width: 400px;
+            height: 400px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <p>sdasd</p>
+</body>
+</html>
