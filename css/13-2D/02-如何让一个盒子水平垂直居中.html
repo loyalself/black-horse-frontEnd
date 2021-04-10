@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-如何让一个盒子水平垂直居中</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            /* 
+             * 1. translate里的参数是可以百分比的;
+             * 2. 如果里面的参数是 % ,则移动的距离是盒子自身宽度或自身高度来对比的;
+             这里的 50% 就是 150px ,因为盒子的宽度是 300px 
+            */
+            transform: translateX(50%);
+        }
+        p {
+            /* 方式一:实现盒子的水平居中 */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /* 这些值都是写死的 */
+             /* margin-left: -50px;  
+            margin-top: -50px; */
+ 
+            width: 100px;
+            height: 100px;
+            
+            /* 方式二:  */
+            transform: translate(-50%,-50%);
+
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        1. 2D转换之移动 translate
+            2D移动是转换里的一种功能,可以改变元素在页面中的位置,类似定位.
+        2. 语法:    
+            transform: translate(x,y)
+            transform: translateX(n)
+            transform: translateY(n)
+        3. 重点:
+            3.1 定义 2D 转换中的移动,沿着 X 和 Y 轴移动元素;
+            3.2 最大优点: 不会影响其它元素是的位置;
+            3.3 百分比单位是相对于自身元素的 translate(50%,50%)
+            3.4 对行内标签没有效果
+     -->
+    <div>
+        <p></p>
+    </div>
+</body>
+</html>
