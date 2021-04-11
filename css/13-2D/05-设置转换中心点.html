@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05-设置转换中心点</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 100px auto;
+            transition: all 1s;
+            /* 1.使用方位名词改变元素的转换中心点 */
+            /* transform-origin: left bottom; */
+            /* 2. 默认的是 50% 50% 等价于 center center */
+            /* 3. 使用px 像素为单位进行旋转 */
+            transform-origin: 20px 20px;
+        }
+        
+        div:hover {
+            transform: rotate(360deg)
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        transform: 它默认是按照自己的中心点(50% 50%)进行转换的,那能不能设置其它点进行转换呢?有的,如下:
+            transform-origin: x y;
+        重点: 
+            1. 注意后面的参数 x 和 y 用空格隔开;
+            2. x y 默认转换的中心点是元素的中心点(50% 50%)
+            3. 还可以给x y 设置像素 或者 方位名词(top right bottom left center)
+    -->
+
+    <div></div>
+</body>
+
+</html>

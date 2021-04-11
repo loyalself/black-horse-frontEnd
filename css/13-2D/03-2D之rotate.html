@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03-2D之rotate</title>
+    <style>
+        img {
+            width: 249px;
+            height: 249px;
+            /* 变成圆形 */
+            border-radius: 50%;
+            border: 5px solid pink;
+            /* 过渡写到本身上,谁做过渡给谁加 */
+            transition: all 2s;
+        }
+        /* 鼠标划过时顺时针旋转90度,会很突兀,配合【过渡】一起使用,会显得柔和一些 */
+        
+        img:hover {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../test-images/tlp.jpg" alt="tlp">
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
             margin: 0;
             padding: 0;
         }
+        
         div {
             position: relative;
             width: 300px;
@@ -22,25 +24,24 @@
             */
             transform: translateX(50%);
         }
+        
         p {
             /* 方式一:实现盒子的水平居中 */
             position: absolute;
             top: 50%;
             left: 50%;
-            /* 这些值都是写死的 */
-             /* margin-left: -50px;  
+            /* 这些值都是写死的,不灵活 */
+            /* margin-left: -50px;  
             margin-top: -50px; */
- 
             width: 100px;
             height: 100px;
-            
             /* 方式二:  */
-            transform: translate(-50%,-50%);
-
+            transform: translate(-50%, -50%);
             background-color: purple;
         }
     </style>
 </head>
+
 <body>
     <!-- 
         1. 2D转换之移动 translate
@@ -59,4 +60,5 @@
         <p></p>
     </div>
 </body>
+
 </html>

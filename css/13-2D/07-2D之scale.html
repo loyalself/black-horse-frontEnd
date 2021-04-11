@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07-2D之scale</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 100px auto;
+            /* 设置中心点进行缩放 */
+            transform-origin: left bottom
+        }
+        
+        div:hover {
+            /* 1. 传统做法,直接设置宽高,元素以上沿为基础进行缩放,且会将影响其他 */
+            /* width: 300px;
+            height: 300px; */
+            /* 2. 使用 scale 进行缩放 */
+            /* 放大 */
+            transform: scale(2)
+            /* 缩小 */
+            /* transform: scale(0.5) */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        需求:实现鼠标划过元素,改变元素的大小,之前的做法是设置 width 和 height;
+             现在可以用 scale 来实现.
+        1. 语法: transform:scale(x,y);
+        2. 注意点:
+            2.1 scale(1,1): 宽和高都放大一倍,相当于元素大小没有改变;
+            2.2 scale(2,2): 宽和高都放大2倍;简写 scale(2);
+            2.3 scale(0.5): 宽和高都缩小0.5倍
+        3. 它与之前设置宽高的做法相比优势:
+            直接设置宽高是按照盒子的上沿缩放的,且会影响其他元素;
+            而 scale 可以设置转换中心点缩放,默认以中心点缩放,而且不影响其他元素
+     -->
+    <p>锄禾日当午</p>
+    <div></div>
+    <p>汗滴禾下土</p>
+</body>
+
+</html>

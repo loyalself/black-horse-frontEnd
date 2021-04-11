@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06-设置转换中心点案例</title>
+    <style>
+        div {
+            float: left;
+            overflow: hidden;
+            width: 200px;
+            height: 200px;
+            margin-left: 20px;
+            background-color: pink;
+        }
+        
+        div::before {
+            display: block;
+            content: '阿学';
+            width: 100%;
+            height: 100%;
+            background-color: skyblue;
+            transform: rotate(180deg);
+            transform-origin: left bottom;
+            transition: all 0.5s
+        }
+        
+        div:hover::before {
+            transform: rotate(0deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>

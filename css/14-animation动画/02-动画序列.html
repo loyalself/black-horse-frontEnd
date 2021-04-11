@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-动画序列</title>
+    <style>
+        /* from 和 to 等价于 0% 和 100% */
+        /*
+          动画序列:
+            1. 可以做多个状态的变化 keyframe 关键帧;
+            2. 里面的百分比需要是整数;
+            3. 里面的百分比就是 总的时间的划分
+               即25%是: 经过 25% * 10s = 2.5s 实现 25% 定义的动画帧效果
+               75%是:  经过 75% * 10s = 7.5s 实现 75% 定义的动画帧效果 
+         */
+        
+        @keyframes test-move {
+            /* 0% 初始状态其实可以省略 */
+            0% {
+                transform: translate(0px, 0px)
+            }
+            25% {
+                transform: translate(1000px, 0)
+            }
+            50% {
+                transform: translate(1000px, 400px)
+            }
+            75% {
+                transform: translate(0px, 400px)
+            }
+            100% {
+                transform: translate(0px, 0px)
+            }
+        }
+        
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            animation: test-move;
+            animation-duration: 10s
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

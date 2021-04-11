@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-初识animation</title>
+    <style>
+        /* 1. 定义动画 */
+        
+        @keyframes test-move {
+            /* 开始状态 */
+            0% {
+                transform: translateX(0px)
+            }
+            /* 结束状态 */
+            100% {
+                transform: translateX(1000px)
+            }
+        }
+        
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 2.使用动画 */
+            animation: test-move;
+            /* 动画持续时间 */
+            animation-duration: 3s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        需求:打开当前页面,一个盒子从左过渡到右边,没有鼠标划过,这种之前学的知识就解决不了了,这时就有了动画
+
+        制作动画分为两步:
+        1. 先定义动画:
+              用 keyframes 定义动画(类似定义类选择器)
+                @keyframes 动画名称 {
+                    0% {
+                        width: 100px
+                    }
+
+                    100% {
+                        width: 200px
+                    }
+                }
+                讲解: 0%元素初始属性的设置,100%元素动画结束时的属性设置
+        2. 再使用(调用)动画:
+                
+
+    -->
+
+    <div></div>
+</body>
+
+</html>
