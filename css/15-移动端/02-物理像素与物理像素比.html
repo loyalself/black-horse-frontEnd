@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-物理像素与物理像素比</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            width: 375px;
+            height: 300px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    1. 物理像素: 就是我们说的分辨率, iphone8:1334x750像素,说明的是宽可以放下750个像素点,高度可以放 1334个;
+                在电脑端也有这种分辨率,是一样的。
+    2. 开发时: 1px 不一定等于 1个物理像素;
+                PC端里1px等于1个物理像素;
+                但移动端不尽相同,比如:在iphone8里, 1px 开发像素 = 2个物理像素,意思就是开发移动端写一个 width=375px的盒子就可以覆盖整个屏幕了
+    3. 一个 px 能显示的物理像素点的个数,称为物理像素比或屏幕像素比
+    -->
+    <div></div>
+</body>
+</html>
