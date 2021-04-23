@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-flex设置主轴方向</title>
+    <style>
+        div {
+            display: flex;
+            /* 默认省略了这行代码: flex-direction: row */
+            /* 1. 设置主轴为 x 轴,但是子元素从右往左排列 */
+            /* flex-direction: row-reverse; */
+            /* 2. 设置主轴为 y 轴,即子元素从上往下排列 */
+            /* flex-direction: column; */
+            /* 3. 设置主轴为 y 轴,但是子元素翻转排列*/
+            flex-direction: column-reverse;
+            width: 80%;
+            height: 300px;
+            background-color: pink;
+        }
+        
+        div span {
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+       1. 在 flex 布局中, 是分为主轴和侧轴两个方向的,同样的叫法有: 行和列、x轴和y轴,我们的元素是跟着主轴来排列的;
+          默认主轴是 x 轴方向,水平向右(那么侧轴就是 y 轴方向,水平向下);但可以通过 flex-direction 属性设置主轴方向.
+       2. flex-direction: 决定主轴的方向(即元素的排列方向) 
+          row: 这是默认值,从左到右;
+          row-reverse: 从右到左(了解);
+          column: 从上到下;
+          column-reverse: 从下到上(了解)  
+     -->
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+
+</body>
+
+</html>

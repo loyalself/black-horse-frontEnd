@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04-flex-wrap属性</title>
+    <style>
+        div {
+            display: flex;
+            width: 400px;
+            height: 300px;
+            background-color: pink;
+            /* 
+             * 在 flex 布局中,默认的子元素是不换行的,如果装不开,会缩小子盒子的宽度以此来适应,但是这是不好的,有时我们
+             * 需要子元素的宽度不变,一行装不开就进行换行.
+             * flex布局里默认的会有一行代码 flex-wrap:nowrap 不换行
+             */
+            flex-wrap: wrap;
+        }
+        
+        span {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+    </div>
+</body>
+
+</html>

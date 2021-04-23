@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03-justify-content属性</title>
+    <style>
+        div {
+            display: flex;
+            /* 1.右对齐 */
+            /* justify-content: flex-end; */
+            /* 2.居中对齐 */
+            /* justify-content: center; */
+            /* 3. 平均分空间对齐 */
+            /* justify-content: space-around; */
+            /* 4. 两边元素贴边,中间平均分 */
+            justify-content: space-between;
+            width: 800px;
+            height: 300px;
+            background-color: pink;
+        }
+        
+        div span {
+            width: 120px;
+            height: 120px;
+            border: 1px solid black;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        justify-content: 设置【主轴】方向的子元素的排列方式
+        1. 当主轴为 x 轴时:
+            flex-start: 默认从左到右(可理解成左对齐);
+            flex-end: 右对齐;
+            center: 水平居中对齐;
+            space-around: 平均分空间;
+            space-between: 两边元素贴边,剩下的平均分空间(重要).
+        1. 当主轴为 y 轴时:
+            flex-start: 默认从上到下(可理解成上对齐);
+            flex-end: 下对齐;
+            center: 垂直居中对齐;
+            space-around: 平均分空间;
+            space-between: 两边元素贴边,剩下的平均分空间(重要)    
+     -->
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+    </div>
+
+</body>
+
+</html>

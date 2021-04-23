@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-flex初体验</title>
+    <style>
+        div {
+            display: flex;
+            width: 80%;
+            height: 300px;
+            background-color: pink;
+        }
+        
+        div span {
+            /* width: 150px; */
+            /* 让 每一个span 平均分,设置 flex: 1 */
+            flex: 1;
+            height: 150px;
+            margin-right: 10px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        1. 传统布局: 兼容性好,布局繁琐,但有局限性,不能在移动端实现很好的布局;
+           flex弹性布局: 操作方便,布局【极】为简单,移动端应用广泛,PC端浏览器支持情况较差.
+        2. 建议:
+           2.1 如果是PC端布局,我们还是传统布局;
+           2.2 如果是移动端或者不考虑兼容性问题的PC端页面,我们还是使用 flex 弹性布局.
+        3. flex 布局原理:
+           通过给父元素设置 flex 属性,来控制子元素的位置和排列方式.
+    -->
+
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+</body>
+
+</html>

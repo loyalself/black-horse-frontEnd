@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07-子项flex属性</title>
+    <style>
+        section {
+            display: flex;
+            width: 60%;
+            height: 150px;
+            margin: 100px auto;
+            background-color: pink;
+        }
+        
+        section div:nth-child(1) {
+            width: 150px;
+            background-color: skyblue;
+        }
+        /* 给第二个div设置 flex:1,表示它一个人占用父元素剩余的空间 */
+        
+        section div:nth-child(2) {
+            flex: 1;
+            background-color: green;
+        }
+        
+        section div:nth-child(3) {
+            width: 150px;
+            background-color: red;
+        }
+        /* 要求 p 下面的每一个 span平均分空间 */
+        
+        p {
+            display: flex;
+            width: 60%;
+            height: 150px;
+            margin: 100px auto;
+            background-color: pink;
+        }
+        
+        p span {
+            flex: 1;
+        }
+        
+        p span:nth-child(1) {
+            background-color: purple;
+        }
+        /* 要求第二个占空间多一些,可以设置 flex 的数值 */
+        
+        p span:nth-child(2) {
+            flex: 2;
+            background-color: orange;
+        }
+        
+        p span:nth-child(3) {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </section>
+
+    <p><span>1</span><span>2</span><span>3</span></p>
+</body>
+
+</html>

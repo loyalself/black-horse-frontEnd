@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08-align-self以及order</title>
+    <style>
+        div {
+            display: flex;
+            width: 500px;
+            height: 300px;
+            background-color: pink;
+        }
+        
+        div span {
+            width: 100px;
+            height: 100px;
+            margin-right: 15px;
+            background-color: green;
+            border: 1px solid black;
+        }
+        /* 将第二个span移动到第一个排列,不修改 html 结构 */
+        
+        div span:nth-child(2) {
+            order: -1
+        }
+        /* 将第三个 span 贴着最下面的边排列*/
+        
+        div span:nth-child(3) {
+            align-self: flex-end
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        1.有的时候我们希望将父元素下的某一个子元素(或者个别的子元素)按照一定的规则排序,这时就可以用到 align-self 了:
+          align-self 允许单个元素与其它元素有不一样的对齐方式,可覆盖 align-items 属性,默认值是 auto,表示继承父元素的
+          align-items 属性,如果没有父元素,则等同于 stretch.
+        2.有时我们还想规定某个子元素的排列顺序,这时就用到了order:
+          order 定义元素的排列顺序,数值越小,排列越靠前,默认值是0;它和 z-index 不一样,z-index 是越大越靠前 
+     -->
+    <div><span>1</span><span>2</span><span>3</span></div>
+</body>
+
+</html>
