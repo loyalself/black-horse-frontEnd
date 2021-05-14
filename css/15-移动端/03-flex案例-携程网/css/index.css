@@ -9,12 +9,25 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
+
+/* 取消 a 链接默认下划线 */
+
 a {
     text-decoration: none;
+    color: #222;
 }
+
+
+/* c3盒子模型 */
 
 div {
     box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -89,5 +102,58 @@ div {
 }
 
 .focus {
+    /* 因为顶部的搜索栏是固定定位,所以若不设置一个top值,则焦点图会被搜索栏挡住一部分 */
     padding-top: 44px;
+}
+
+
+/* 局部导航栏 */
+
+.local-nav {
+    display: flex;
+    height: 64px;
+    background-color: #fff;
+    margin: 3px 4px;
+    border-radius: 8px;
+}
+
+.local-nav li {
+    flex: 1;
+}
+
+.local-nav a {
+    display: flex;
+    /* 将 a 下面的子元素设置成 Y 轴排列 */
+    flex-direction: column;
+    /* 侧轴元素居中对齐,因为是单行 */
+    align-items: center;
+    font-size: 12px;
+}
+
+
+/* 找到 li 下面 class 以 local-nav-icon 开头的 class */
+
+.local-nav li [class^="local-nav-icon"] {
+    width: 32px;
+    height: 32px;
+    background-color: pink;
+    margin-top: 8px;
+    background: url(../images/localnav_bg.png) no-repeat 0 0;
+    background-size: 32px auto;
+}
+
+.local-nav li .local-nav-icon-icon2 {
+    background-position: 0 -32px;
+}
+
+.local-nav li .local-nav-icon-icon2 {
+    background-position: 0 -64px;
+}
+
+.local-nav li .local-nav-icon-icon4 {
+    background-position: 0 -96px;
+}
+
+.local-nav li .local-nav-icon-icon5 {
+    background-position: 0 -128px;
 }
