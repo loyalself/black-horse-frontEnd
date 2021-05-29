@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04-res适配最终方案</title>
+    <style>
+        @media screen and (min-width:320px) {
+            html {
+                font-size: 21.33px;
+            }
+        }
+        
+        @media screen and (min-width:750px) {
+            html {
+                font-size: 50px;
+            }
+        }
+        
+        div {
+            /* 传统写法 */
+            /* width: 100px;
+            height: 100px; */
+            /* 
+             * 用 rem 方式设置宽高:
+             *  1.首先我们选一套标准尺寸: 以750为准;
+             *  2.用屏幕尺寸 / 将屏幕划分的份数 = html字体大小 (但我们知道不同屏幕下得到的文字大小是不一样的); 
+             *  3.页面元素 rem 值 = 页面元素在 750px 的 px 值 / html字体大小 
+             * 那么当前 div的 rem 宽度值为: 100px / 50px = 2rem 
+             */
+            width: 2rem;
+            height: 2rem;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

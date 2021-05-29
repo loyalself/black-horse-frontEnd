@@ -1,0 +1,25 @@
+div{
+    width: 100px;
+    height: 100px;
+    a{
+        color: pink;
+        text-decoration: none;
+        // 如果有伪类、交集选择器、伪元素选择器,我们内层选择器前面需要加 &
+        &:hover{
+            color: green;
+        }
+    }
+}
+
+
+nav {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    .logo {
+        background-color: yellow;
+    }
+    &::before{
+        content: "&的使用";
+    }
+}

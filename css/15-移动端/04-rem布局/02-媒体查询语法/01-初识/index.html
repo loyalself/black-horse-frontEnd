@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-媒体查询语法</title>
+    <style>
+        /* 设置屏幕的最大宽度,当宽度小于等于800px时,body的颜色为粉红色;超过800是,没有样式(即变成默认样式) */
+        
+        @media screen and (max-width:800px) {
+            body {
+                background-color: pink;
+            }
+        }
+        
+        @media screen and (max-width:300px) {
+            body {
+                background-color: green;
+            }
+        }
+    </style>
+
+</head>
+<!-- 
+    1.引入: 从上一节发现,html字体大小是死的,所以当屏幕尺寸发生变化时,html的子元素的大小并不会变化;所以引入媒体查询;
+    2.概念: 使用 @media 查询,可以针对不同的媒体类型定义不同的样式;可以针对不同的屏幕尺寸设置不同的样式;
+    3.当你重置浏览器大小的过程种,页面也会根据浏览器的宽度和高度重新渲染页面;
+    4.语法:
+     @media mediatype and|not|only (media feature){
+         css-code
+     }
+     注意:
+     4.1 用@media开头,注意 @符号;
+     4.2 mediatype媒体类型,它的取值: all(所有设备)|screen(电脑屏、手机屏、平板等)|print(打印机和打印预览);
+     4.3 关键字 and(且、和)|not(非、除掉)|only(只有);
+     4.4 media fetaure 媒体特性,必须有小括号包含.
+
+ -->
+
+<body>
+
+</body>
+
+</html>

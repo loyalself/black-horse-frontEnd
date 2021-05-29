@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03-媒体查询+rem</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* 媒体查询写法 */
+        
+        @media screen and (min-width:320px) {
+            html {
+                font-size: 50px;
+            }
+        }
+        
+        @media screen and (min-width:640px) {
+            html {
+                font-size: 100px;
+            }
+        }
+        
+        div {
+            margin: 0 auto;
+            width: 6rem;
+            height: 1rem;
+            font-size: 0.5rem;
+            color: #fff;
+            background-color: green;
+            text-align: center;
+            line-height: 1rem;
+        }
+        /* 
+         传统固定写法
+        div {
+            margin: 0 auto;
+            width: 500px;
+            height: 80px;
+            font-size: 36px;
+            text-align: center;
+            line-height: 80px;
+            background-color: green;
+        } */
+    </style>
+</head>
+
+<body>
+    <div>
+        购物车
+    </div>
+</body>
+
+</html>

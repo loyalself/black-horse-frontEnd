@@ -1,0 +1,22 @@
+div {
+  width: 100px;
+  height: 100px;
+}
+div a {
+  color: pink;
+  text-decoration: none;
+}
+div a:hover {
+  color: green;
+}
+nav {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+nav .logo {
+  background-color: yellow;
+}
+nav::before {
+  content: "&的使用";
+}

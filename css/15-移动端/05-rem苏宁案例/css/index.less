@@ -1,0 +1,45 @@
+/**
+* @import: 是把一个样式导入到另外一个文件里,相当于把导入的样式复制到当前文件
+* link: 是把一个样式文件引入到另外一个文件里
+*/
+@import "common";
+
+// 让 boody 水平居中
+body{
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    line-height: 1.5rem;
+    font-family: Arial, Helvetica;
+    background-color: #f2f2f2;
+}
+
+@baseFontSize:50px;
+.search-content{
+    display: flex;
+    position:fixed;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);    
+    width: 15rem;
+    height: (88rem / @baseFontSize);
+    background-color: #ffc001;
+    .classify{
+        width: (44rem / @baseFontSize);
+        height: (70rem / @baseFontSize);
+        margin: (11rem / @baseFontSize) (25rem / @baseFontSize)  (7rem / @baseFontSize) (24rem / @baseFontSize);
+        background:url('../images/classify.png') no-repeat;
+        //背景缩放
+        background-size: (44rem / @baseFontSize) (70rem / @baseFontSize);
+    }
+    .search{
+        flex:1;
+        background-color: purple;
+    }
+    .login{
+        width: (75rem / @baseFontSize);
+        height: (70rem / @baseFontSize);
+        background-color: blue;
+        margin: (10rem / @baseFontSize);
+    }
+}

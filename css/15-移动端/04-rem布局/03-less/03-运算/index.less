@@ -1,0 +1,23 @@
+@borderValue:10px + 5;
+@baseFontSize:12px;
+html{
+    font-size: @baseFontSize;
+}
+
+div {
+    width: 100px;
+    height: 200px;
+    border: @borderValue solid red;
+    p{
+        width: 10rem + @baseFontSize;
+        height: 15rem + @baseFontSize;
+        background-color: pink;
+    }
+}
+
+/**
+* 总结:
+* 1. 运算符左右两侧必须敲一个空格隔开;
+* 2. 两个数参与运算,如果只有一个数有单位,则最后的结果就以这个单位为准;
+* 3. 两个数参与运算,如果两个数都有单位,而且是不一样的单位,最后的结果以第一个单位为准
+*/ 

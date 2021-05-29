@@ -1,0 +1,75 @@
+//设置常见的移动端屏幕尺寸大小,我们此次规定将屏幕划分为15份
+@screenDivisionNumber: 15;
+
+//当我们用PC端打开时,再划分份数就不合理了,太大了,所以设置字体大小为 50px 就行了
+html{
+    font-size: 50px;
+}
+
+// 屏幕尺寸为320px时
+@media screen and (min-width:320px){
+    html{
+        // 特别说明:不加括号,在css文件里还是公式,不是具体的数值
+        font-size: (320px / @screenDivisionNumber);
+    }
+}
+
+@media screen and (min-width:360px){
+    html{
+        font-size: (360px / @screenDivisionNumber);
+    }
+}
+
+@media screen and (min-width:375px){
+    html{
+        font-size: (375px / @screenDivisionNumber);
+    }
+}
+
+@media screen and (min-width:375px){
+    html{
+        font-size: (375px / @screenDivisionNumber);
+    }
+}
+
+@media screen and (min-width:400px){
+    html{
+        font-size: (400px / @screenDivisionNumber);
+    }
+}
+
+@media screen and (min-width:414px){
+    html{
+        font-size: (414px / @screenDivisionNumber);
+    }
+}
+
+@media screen and (min-width:424px){
+    html{
+        font-size: (424px / @screenDivisionNumber);
+    }
+}
+
+@media screen and (min-width:480px){
+    html{
+        font-size: (480px / @screenDivisionNumber);
+    }
+}
+
+@media screen and (min-width:540px){
+    html{
+        font-size: (540px / @screenDivisionNumber);
+    }
+}
+
+@media screen and (min-width:720px){
+    html{
+        font-size: (720px / @screenDivisionNumber);
+    }
+}
+
+@media screen and (min-width:750px){
+    html{
+        font-size: (750px / @screenDivisionNumber);
+    }
+}
