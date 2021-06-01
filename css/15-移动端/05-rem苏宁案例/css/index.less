@@ -2,9 +2,9 @@
 * @import: 是把一个样式导入到另外一个文件里,相当于把导入的样式复制到当前文件
 * link: 是把一个样式文件引入到另外一个文件里
 */
-@import "common";
+@import "common.less";
 
-// 让 boody 水平居中
+// 让 body 水平居中
 body{
     min-width: 320px;
     width: 15rem;
@@ -33,6 +33,7 @@ body{
         background-size: (44rem / @baseFontSize) (70rem / @baseFontSize);
     }
     .search{
+        // 让search模块平分父元素剩余的所有空间
         flex:1;
         background-color: purple;
     }
