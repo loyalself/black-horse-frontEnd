@@ -11,13 +11,22 @@
             height: 300px;
             background-color: pink;
             margin-top: 30px;
+            /* 解决塌陷方式一: 给父元素设置上边框*/
             /* border-top: 1px solid transparent; */
-            padding-top: 10px;
+
+            /* 解决塌陷方式二: 给父元素设置上内边距 */
+            /* padding-top: 10px; */
+
+            /* 解决塌陷方式三: 给父元素设置 overflow:hidden */
+            overflow: hidden;
         }
         .son {
             width: 200px;
             height: 100px;
             background-color: purple;
+            /* 
+             * 父元素也设置了margin-top:30px,子元素设置的是100px,这时以设置较大值的那个为准;这种现象就叫【嵌套元素出现垂直外边距塌陷】
+             */
             margin-top: 100px;
         }
     </style>
